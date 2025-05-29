@@ -9,9 +9,14 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 
-const pages = ['Home', 'About Us', 'Services', 'Testimonials', 'Contact'];
+const pages = [
+    { name: 'Home', id: 'home-section' },
+    { name: 'About Us', id: 'about-us-section' },
+    { name: 'Services', id: 'services-section' },
+    { name: 'Testimonials', id: 'testimonials-section' },
+    { name: 'Contact', id: 'contact-section' },
+]
 function Navbar() {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
 
@@ -21,6 +26,14 @@ function Navbar() {
 
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
+    };
+
+    const handleNavClick = (id: string) => {
+        setAnchorElNav(null);
+        const el = document.getElementById(id);
+        if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+        }
     };
 
     return (
@@ -35,29 +48,13 @@ function Navbar() {
                     alignItems: "center",
                 }}
             >
-                <AdbIcon sx={{ mr: 1, color: "#222" }} />
-                <Typography
-                    variant="h6"
-                    noWrap
-                    component="a"
-                    href="/"
-                    sx={{
-                        fontFamily: 'monospace',
-                        fontWeight: 700,
-                        letterSpacing: '.3rem',
-                        color: '#222',
-                        textDecoration: 'none',
-                    }}
-                >
-                    LOGO
-                </Typography>
             </Box>
             <AppBar
                 position="fixed"
                 elevation={2}
                 sx={{
                     background: "transparent",
-                    boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+                    boxShadow: "none",
                     alignItems: "center",
                 }}
             >
@@ -73,7 +70,6 @@ function Navbar() {
                     }}
                 >
                     <Toolbar disableGutters sx={{ justifyContent: "center" }}>
-                        {/* Responsive menu and nav links only */}
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, justifyContent: "center" }}>
                             <IconButton
                                 size="large"
@@ -102,8 +98,8 @@ function Navbar() {
                                 sx={{ display: { xs: 'block', md: 'none' } }}
                             >
                                 {pages.map((page) => (
-                                    <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                        <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
+                                    <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                                        <Typography sx={{ textAlign: 'center' }}>{page.name}</Typography>
                                     </MenuItem>
                                 ))}
                             </Menu>
@@ -111,11 +107,11 @@ function Navbar() {
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: "center" }}>
                             {pages.map((page) => (
                                 <Button
-                                    key={page}
-                                    onClick={handleCloseNavMenu}
+                                    key={page.name}
+                                    onClick={() => handleNavClick(page.id)}
                                     sx={{ my: 2, color: 'white', display: 'block' }}
                                 >
-                                    {page}
+                                    {page.name}
                                 </Button>
                             ))}
                         </Box>
