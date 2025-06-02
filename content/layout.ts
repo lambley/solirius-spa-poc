@@ -1,4 +1,5 @@
-import { NavigationItem, LegalLink } from "@/types/layout";
+import * as Global from "@/content/global";
+import { NavigationItem, LegalLink, FooterAddress } from "@/types/layout";
 
 const navigation: NavigationItem[] = [
   { label: "Home", href: "", icon: true },
@@ -14,4 +15,11 @@ const legalLinks: LegalLink[] = [
   { label: "Cookies Policy", href: "/cookies" },
 ];
 
-export { navigation, legalLinks };
+const footerDetails: FooterAddress = {
+  address: Global.address,
+  tagline: Global.tagline,
+  companyNumber: Global.companyNumber,
+  vatNumber: Global.vatNumber,
+};
+
+export { navigation, legalLinks, footerDetails };
