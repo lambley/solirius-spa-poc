@@ -15,25 +15,25 @@ export default function Home() {
       </div>
       <div
         id="about"
-        className="h-dvh relative isolate px-6 pt-14 lg:px-8 border-t border-gray-200"
+        className="min-h-dvh h-min relative isolate px-6 pt-14 lg:px-8 border-t border-gray-200"
       >
         <Sections.About />
       </div>
       <div
         id="services"
-        className="h-dvh relative isolate px-6 pt-14 lg:px-8 border-t border-gray-200"
+        className="min-h-dvh h-min relative isolate px-6 pt-14 lg:px-8 border-t border-gray-200"
       >
         <Sections.Services />
       </div>
       <div
         id="testimonials"
-        className="h-dvh relative isolate px-6 pt-14 lg:px-8 border-t border-gray-200"
+        className="min-h-dvh h-min relative isolate px-6 pt-14 lg:px-8 border-t border-gray-200"
       >
         <Sections.Testimonials />
       </div>
       <div
         id="contact"
-        className="h-dvh relative isolate px-6 pt-14 lg:px-8 border-t border-gray-200"
+        className="min-h-dvh h-min relative isolate px-6 pt-14 lg:px-8 border-t border-gray-200"
       >
         <Sections.Contact />
       </div>
