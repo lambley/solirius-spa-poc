@@ -116,7 +116,7 @@ export default function Navigation() {
     <header className="absolute inset-x-0 top-0 z-50 sticky">
       <nav
         aria-label="Global"
-        className="flex items-center justify-between p-6 lg:px-8"
+        className="flex items-center justify-between p-6 lg:px-8 bg-white shadow-sm"
       >
         <DesktopNav />
         <div className="flex lg:hidden">
