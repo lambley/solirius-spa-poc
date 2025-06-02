@@ -59,7 +59,7 @@ export default function Services() {
             width={400}
             height={400}
             alt="placeholder"
-          ></Image>
+          />
         </div>
       </article>
     ));

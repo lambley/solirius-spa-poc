@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
-#section {
+#hero {
   height: calc(100vh - (var(--spacing) * 6));
 }

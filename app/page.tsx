@@ -7,10 +7,22 @@ export default function Home() {
   return (
     <div className="bg-white">
       <Layout.Navigation />
-      <div id="section" className="relative isolate px-6 pt-14 lg:px-8 border-b border-gray-200">
+      <div
+        id="hero"
+        className="relative isolate px-6 pt-14 lg:px-8 border-b border-gray-200"
+      >
         <Sections.Hero />
       </div>
-      <div id="section services" className="relative isolate px-6 pt-14 lg:px-8 border-t border-gray-200">
+      <div
+        id="about"
+        className="h-dvh relative isolate px-6 pt-14 lg:px-8 border-t border-gray-200"
+      >
+        <Sections.About />
+      </div>
+      <div
+        id="services"
+        className="h-dvh relative isolate px-6 pt-14 lg:px-8 border-t border-gray-200"
+      >
         <Sections.Services />
       </div>
     </div>
