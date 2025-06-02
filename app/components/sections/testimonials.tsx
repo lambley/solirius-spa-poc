@@ -28,33 +28,74 @@ const testimonials = [
   },
 ];
 
+const tools = [
+  { name: "Jira", image: "https://placehold.co/100.png" },
+  { name: "GitHub", image: "https://placehold.co/100.png" },
+  { name: "Google Suite", image: "https://placehold.co/100.png" },
+  { name: "Office", image: "https://placehold.co/100.png" },
+  { name: "Kandji", image: "https://placehold.co/100.png" },
+];
+
 export default function Testimonials() {
   const renderTestimonials = () => {
-    return testimonials.map((testimonial) => (
-      <div
-        key={testimonial.id}
-        className="flex flex-col items-start justify-between p-6 bg-white rounded-lg shadow-sm"
-      >
-        <div className="flex items-center gap-x-4">
-          <Image
-            src={testimonial.image}
-            width={100}
-            height={100}
-            alt={`${testimonial.name}'s photo`}
-            className="h-10 w-10 rounded-full"
-          />
-          <div>
-            <p className="text-sm font-semibold text-gray-900">
-              {testimonial.name}
+    return (
+      <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        {testimonials.map((testimonial) => (
+          <div
+            key={testimonial.id}
+            className="flex flex-col items-start justify-between p-6 bg-white rounded-lg shadow-sm"
+          >
+            <div className="flex items-center gap-x-4">
+              <Image
+                src={testimonial.image}
+                width={100}
+                height={100}
+                alt={`${testimonial.name}'s photo`}
+                className="h-10 w-10 rounded-full"
+              />
+              <div>
+                <p className="text-sm font-semibold text-gray-900">
+                  {testimonial.name}
+                </p>
+                <p className="text-xs text-gray-600">{testimonial.role}</p>
+              </div>
+            </div>
+            <p className="mt-4 text-sm text-gray-700">
+              &quot;{testimonial.testimonial}&quot;
             </p>
-            <p className="text-xs text-gray-600">{testimonial.role}</p>
           </div>
-        </div>
-        <p className="mt-4 text-sm text-gray-700">
-          &quot;{testimonial.testimonial}&quot;
-        </p>
+        ))}
       </div>
-    ));
+    );
+  };
+
+  const renderTools = () => {
+    return (
+      <div className="mx-auto mt-16 max-w-2xl lg:max-w-4xl">
+        <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+          Tools We Use
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {tools.map((tool) => (
+            <div
+              key={tool.name}
+              className="flex items-center bg-white rounded-lg shadow-sm p-4"
+            >
+              <Image
+                src={tool.image}
+                width={40}
+                height={40}
+                alt={`${tool.name} logo`}
+                className="rounded mr-4"
+              />
+              <span className="text-base font-medium text-gray-800">
+                {tool.name}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
   };
 
   return (
@@ -69,9 +110,8 @@ export default function Testimonials() {
             Solirius Service Centre.
           </p>
         </div>
-        <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {renderTestimonials()}
-        </div>
+        {renderTestimonials()}
+        {renderTools()}
       </div>
     </div>
   );
