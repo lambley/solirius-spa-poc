@@ -1,0 +1,49 @@
+import Link from "next/link";
+import { navigation, legalLinks } from "@/content/layout";
+
+export default function Footer() {
+  return (
+    <footer className="bg-gray-50 border-t border-gray-200 mt-24">
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8">
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Menu</h3>
+            <ul className="space-y-2">
+              {navigation.map((item) => (
+                <li key={item.label}>
+                  <Link
+                    href={item.href}
+                    className="text-gray-700 hover:text-indigo-600 transition"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Legal</h3>
+            <ul className="space-y-2">
+              {legalLinks.map((item) => (
+                <li key={item.label}>
+                  <Link
+                    href={item.href}
+                    className="text-gray-700 hover:text-indigo-600 transition"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="border-t border-gray-200 pt-6 text-center text-sm text-gray-500">
+          <div>Solirius Ltd, 123 Example Street, London, UK</div>
+          <div className="mt-2">
+            &copy; {new Date().getFullYear()} Solirius Ltd. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}

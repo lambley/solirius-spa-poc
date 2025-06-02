@@ -4,3 +4,8 @@ export type NavigationItem = {
   icon?: boolean;
   isExternal?: boolean;
 };
+
+export type LegalLink = {
+  label: string;
+  href: string;
+};

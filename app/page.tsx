@@ -37,6 +37,7 @@ export default function Home() {
       >
         <Sections.Contact />
       </div>
+      <Layout.Footer />
     </div>
   );
 }

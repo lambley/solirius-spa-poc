@@ -4,14 +4,7 @@ import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavigationItem } from "@/types/layout";
-
-const navigation: NavigationItem[] = [
-  { label: "Home", href: "#hero", icon: true },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
-];
+import { navigation } from "@/content/layout";
 
 function DesktopNav() {
   return (
