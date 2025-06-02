@@ -31,6 +31,12 @@ export default function Home() {
       >
         <Sections.Testimonials />
       </div>
+      <div
+        id="contact"
+        className="h-dvh relative isolate px-6 pt-14 lg:px-8 border-t border-gray-200"
+      >
+        <Sections.Contact />
+      </div>
     </div>
   );
 }
