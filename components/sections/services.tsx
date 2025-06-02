@@ -1,31 +1,5 @@
 import Image from "next/image";
-
-const services = [
-  {
-    id: 1,
-    title: "Continuous Improvement",
-    href: "#",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    category: { title: "Software", href: "#" },
-  },
-  {
-    id: 2,
-    title: "Incident Management",
-    href: "#",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    category: { title: "Incidents", href: "#" },
-  },
-  {
-    id: 3,
-    title: "Discovery",
-    href: "#",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    category: { title: "Discovery", href: "#" },
-  },
-];
+import { sections, services } from "@/content/sections";
 
 export default function Services() {
   const renderServices = () => {
@@ -70,10 +44,10 @@ export default function Services() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-            Our Services
+            {sections.services.title}
           </h2>
           <p className="mt-2 text-lg/8 text-gray-600">
-            Learn what Solirius Reply Service Centre can do for you.
+            {sections.services.description}
           </p>
         </div>
         <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">

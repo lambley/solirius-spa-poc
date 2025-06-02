@@ -1,40 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
-const testimonials = [
-  {
-    id: 1,
-    name: "John Doe",
-    role: "Software Engineer",
-    image: "https://placehold.co/100.png",
-    testimonial:
-      "Solirius Service Centre has transformed our operations with their exceptional service and continuous improvement strategies.",
-  },
-  {
-    id: 2,
-    name: "Jane Smith",
-    role: "Project Manager",
-    image: "https://placehold.co/100.png",
-    testimonial:
-      "The incident management support from Solirius has been invaluable in keeping our projects on track.",
-  },
-  {
-    id: 3,
-    name: "Alice Johnson",
-    role: "IT Director",
-    image: "https://placehold.co/100.png",
-    testimonial:
-      "Their discovery services helped us identify key areas for improvement, leading to significant efficiency gains.",
-  },
-];
-
-const tools = [
-  { name: "Jira", image: "https://placehold.co/100.png" },
-  { name: "GitHub", image: "https://placehold.co/100.png" },
-  { name: "Google Suite", image: "https://placehold.co/100.png" },
-  { name: "Office", image: "https://placehold.co/100.png" },
-  { name: "Kandji", image: "https://placehold.co/100.png" },
-];
+import { sections, testimonials, tools } from "@/content/sections";
 
 export default function Testimonials() {
   const renderTestimonials = () => {
@@ -73,7 +39,7 @@ export default function Testimonials() {
     return (
       <div className="mx-auto mt-16 max-w-2xl lg:max-w-4xl">
         <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-          Tools We Use
+          {sections.tools.title}
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {tools.map((tool) => (
@@ -103,11 +69,10 @@ export default function Testimonials() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-            Testimonials
+            {sections.testimonials.title}
           </h2>
           <p className="mt-2 text-lg/8 text-gray-600">
-            Hear what our clients have to say about their experience with the
-            Solirius Service Centre.
+            {sections.testimonials.description}
           </p>
         </div>
         {renderTestimonials()}
