@@ -66,7 +66,12 @@ function MobileNav({
           {navigation
             .filter((item) => item.icon)
             .map((item) => (
-              <Link key={item.label} href={item.href} className="-m-1.5 p-1.5">
+              <Link
+                key={item.label}
+                href={item.href}
+                className="-m-1.5 p-1.5"
+                onClick={() => setOpen(false)}
+              >
                 <span className="sr-only">Solirius Reply</span>
                 <Image
                   alt=""
@@ -98,6 +103,7 @@ function MobileNav({
                     target="_self"
                     rel="noreferrer noopener"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    onClick={() => setOpen(false)}
                   >
                     {item.label}
                   </Link>
