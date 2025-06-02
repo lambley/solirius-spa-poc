@@ -25,11 +25,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {/* this is where you would add a Navbar */}
         {children}
-        {/* this is where you would add a footer */}
       </body>
     </html>
   );
