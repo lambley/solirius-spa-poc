@@ -111,6 +111,47 @@ const sections: Sections = {
     title: "Tools We Use",
     items: tools,
   },
+  contact: {
+    title: "Get in Touch",
+    description:
+      "Send us a message and our team will get back to you as soon as possible.",
+    form: {
+      firstName: {
+        label: "First Name",
+        name: "firstName",
+        type: "text",
+        autoComplete: "given-name",
+      },
+      lastName: {
+        label: "Last Name",
+        name: "lastName",
+        type: "text",
+        autoComplete: "family-name",
+      },
+      email: {
+        label: "Email",
+        name: "email",
+        type: "email",
+        autoComplete: "email",
+      },
+      phone: {
+        label: "Phone",
+        name: "phone",
+        type: "tel",
+        autoComplete: "tel",
+      },
+      message: {
+        label: "Message",
+        name: "message",
+        type: "textarea",
+        autoComplete: "off",
+      },
+      submitButton: {
+        label: "Send Message",
+        type: "submit",
+      },
+    },
+  },
 };
 
 export { sections, services, testimonials, tools };

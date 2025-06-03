@@ -29,6 +29,18 @@ type AboutContent = {
   imageAlt?: string;
 };
 
+type ContactFormField = {
+  label: string;
+  name: string;
+  type: string;
+  autoComplete: string;
+};
+
+type SubmitButton = {
+  label: string;
+  type: "submit" | "button";
+};
+
 export type Sections = {
   hero: {
     title: string;
@@ -59,5 +71,17 @@ export type Sections = {
   tools: {
     title: string;
     items: Tool[];
+  };
+  contact: {
+    title: string;
+    description: string;
+    form: {
+      firstName: ContactFormField;
+      lastName: ContactFormField;
+      email: ContactFormField;
+      phone: ContactFormField;
+      message: ContactFormField;
+      submitButton: SubmitButton;
+    };
   };
 };
