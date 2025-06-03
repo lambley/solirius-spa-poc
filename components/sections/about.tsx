@@ -14,6 +14,19 @@ export default function About() {
           <p className="mt-4 text-gray-600">
             {sections.about.content.description}
           </p>
+          {sections.about.linkToPage && (
+            <div className="mt-10 text-center">
+              <a
+                href={sections.about.linkToPage.href}
+                target={sections.about.linkToPage.target}
+                rel={sections.about.linkToPage.rel}
+                className="text-indigo-600 hover:text-indigo-500 font-semibold"
+              >
+                {sections.about.linkToPage.label}{" "}
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          )}
         </div>
         {renderAboutImage()}
       </div>

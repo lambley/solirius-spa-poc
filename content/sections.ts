@@ -96,17 +96,38 @@ const sections: Sections = {
       image: "https://placehold.co/400.png",
       imageAlt: "Mission Image",
     },
+    linkToPage: {
+      label: "Learn more about us",
+      href: "/about",
+      hrefText: "About Us",
+      target: "_self",
+      rel: "noreferrer",
+    },
   },
   services: {
     title: "Our Services",
     description: "Learn what Solirius Reply Service Centre can do for you.",
     items: services,
+    linkToPage: {
+      label: "View all services",
+      href: "/services",
+      hrefText: "All Services",
+      target: "_self",
+      rel: "noreferrer",
+    },
   },
   testimonials: {
     title: "Testimonials",
     description:
       "Hear what our clients have to say about their experience with the Solirius Service Centre.",
     items: testimonials,
+    linkToPage: {
+      label: "Read more testimonials",
+      href: "/testimonials",
+      hrefText: "More Testimonials",
+      target: "_self",
+      rel: "noreferrer",
+    },
   },
   tools: {
     title: "Tools We Use",

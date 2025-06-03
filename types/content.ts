@@ -41,19 +41,23 @@ type SubmitButton = {
   type: "submit" | "button";
 };
 
+type LinkToPage = {
+  label: string;
+  href: string;
+  hrefText?: string;
+  target?: "_blank" | "_self";
+  rel?: "noopener noreferrer" | "noreferrer";
+};
+
 export type Sections = {
   hero: {
     title: string;
     description: string;
     cta: {
-      primary: { label: string; href: string };
-      secondary: { label: string; href: string };
+      primary: LinkToPage;
+      secondary: LinkToPage;
     };
-    announcement?: {
-      label: string;
-      href: string;
-      hrefText: string;
-    }
+    announcement?: LinkToPage;
   };
   about: {
     title: string;
@@ -61,16 +65,19 @@ export type Sections = {
     image: string;
     imageAlt: string;
     content: AboutContent;
+    linkToPage?: LinkToPage;
   };
   services: {
     title: string;
     description: string;
     items: Service[];
+    linkToPage?: LinkToPage;
   };
   testimonials: {
     title: string;
     description: string;
     items: Testimonial[];
+    linkToPage?: LinkToPage;
   };
   tools: {
     title: string;

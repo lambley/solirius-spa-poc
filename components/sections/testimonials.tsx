@@ -35,6 +35,24 @@ export default function Testimonials() {
     );
   };
 
+  const renderTestimonialsLink = () => {
+    if (!sections.testimonials.linkToPage) return null;
+
+    return (
+      <div className="mt-10 text-center">
+        <a
+          href={sections.testimonials.linkToPage.href}
+          target={sections.testimonials.linkToPage.target}
+          rel={sections.testimonials.linkToPage.rel}
+          className="text-indigo-600 hover:text-indigo-500 font-semibold"
+        >
+          {sections.testimonials.linkToPage.label}{" "}
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    );
+  };
+
   const renderTools = () => {
     return (
       <div className="mx-auto mt-16 max-w-2xl lg:max-w-4xl">
@@ -76,6 +94,7 @@ export default function Testimonials() {
           </p>
         </div>
         {renderTestimonials()}
+        {renderTestimonialsLink()}
         {renderTools()}
       </div>
     </div>
