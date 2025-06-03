@@ -13,7 +13,7 @@ export default function ServicesPage() {
 
   return (
     <div className="min-h-dvh h-min relative isolate px-6 pt-14 lg:px-8 border-t border-gray-200">
-      <Services showLinkToPage={false} children={additionalContent()} />
+      <Services showLinkToPage={false}>{additionalContent()}</Services>
     </div>
   );
 }
