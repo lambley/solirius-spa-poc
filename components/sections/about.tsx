@@ -1,11 +1,13 @@
 import Image from "next/image";
 import { sections } from "@/content/sections";
+import { ReactNode } from "react";
 
 type AboutProps = {
   showLinkToPage?: boolean;
+  children?: ReactNode;
 };
 
-export default function About({ showLinkToPage }: AboutProps) {
+export default function About({ showLinkToPage, children }: AboutProps) {
   const renderAboutContent = () => {
     // text on the left, image on the right
     // on mobile, image on top, text below
@@ -68,6 +70,7 @@ export default function About({ showLinkToPage }: AboutProps) {
           {renderAboutContent()}
         </div>
       </div>
+      {children && <div className="mx-auto mt-10 max-w-2xl">{children}</div>}
     </div>
   );
 }
