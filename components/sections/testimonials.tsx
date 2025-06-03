@@ -1,8 +1,13 @@
 import Image from "next/image";
 import React from "react";
 import { sections, testimonials, tools } from "@/content/sections";
+import { SectionProps } from "@/types/components";
 
-export default function Testimonials() {
+export default function Testimonials({
+  showLinkToPage = true,
+  showToolsSection = true,
+  children,
+}: SectionProps) {
   const renderTestimonials = () => {
     return (
       <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -94,8 +99,14 @@ export default function Testimonials() {
           </p>
         </div>
         {renderTestimonials()}
-        {renderTestimonialsLink()}
-        {renderTools()}
+        {sections.about.linkToPage &&
+          showLinkToPage &&
+          renderTestimonialsLink()}
+        {children && <div className="mx-auto mt-10 max-w-2xl">{children}</div>}
+        {showToolsSection &&
+          sections.tools &&
+          sections.tools.title &&
+          renderTools()}
       </div>
     </div>
   );

@@ -1,13 +1,11 @@
 import Image from "next/image";
 import { sections } from "@/content/sections";
-import { ReactNode } from "react";
+import { SectionProps } from "@/types/components";
 
-type AboutProps = {
-  showLinkToPage?: boolean;
-  children?: ReactNode;
-};
-
-export default function About({ showLinkToPage, children }: AboutProps) {
+export default function About({
+  showLinkToPage = true,
+  children,
+}: SectionProps) {
   const renderAboutContent = () => {
     // text on the left, image on the right
     // on mobile, image on top, text below
@@ -20,7 +18,7 @@ export default function About({ showLinkToPage, children }: AboutProps) {
           <p className="mt-4 text-gray-600">
             {sections.about.content.description}
           </p>
-          {sections.about.linkToPage && !showLinkToPage && (
+          {sections.about.linkToPage && showLinkToPage && (
             <div className="mt-10 text-center">
               <a
                 href={sections.about.linkToPage.href}

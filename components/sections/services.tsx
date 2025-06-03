@@ -1,7 +1,11 @@
 import Image from "next/image";
 import { sections, services } from "@/content/sections";
+import { SectionProps } from "@/types/components";
 
-export default function Services() {
+export default function Services({
+  showLinkToPage = true,
+  children,
+}: SectionProps) {
   const renderServices = () => {
     return services.map((service) => (
       <article
@@ -70,8 +74,9 @@ export default function Services() {
         <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {renderServices()}
         </div>
-        {renderServicesLink()}
+        {sections.services.linkToPage && showLinkToPage && renderServicesLink()}
       </div>
+      {children && <div className="mx-auto mt-10 max-w-2xl">{children}</div>}
     </div>
   );
 }
