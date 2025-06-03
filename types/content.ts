@@ -48,8 +48,12 @@ export type Sections = {
     cta: {
       primary: { label: string; href: string };
       secondary: { label: string; href: string };
-      announcement: { label: string; href: string };
     };
+    announcement?: {
+      label: string;
+      href: string;
+      hrefText: string;
+    }
   };
   about: {
     title: string;

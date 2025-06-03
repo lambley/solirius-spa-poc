@@ -76,10 +76,11 @@ const sections: Sections = {
         label: "Learn more",
         href: "#",
       },
-      announcement: {
-        label: "Announcing our latest service offering",
-        href: "#",
-      },
+    },
+    announcement: {
+      label: "Announcing our latest service offering",
+      href: "#",
+      hrefText: "Learn more",
     },
   },
   about: {
