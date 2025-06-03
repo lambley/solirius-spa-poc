@@ -25,7 +25,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-50 border-t border-gray-200 mt-24">
-      <div className="max-w-7xl mx-auto px-6 py-12">
+      <div className="max-w-7xl mx-auto px-6 sm:px-10 md:px-16 lg:px-24 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8">
           <div>
             <h3 className="text-lg font-semibold mb-4">Menu</h3>
