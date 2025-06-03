@@ -5,6 +5,7 @@ export type NavigationItem = {
   href: string;
   icon?: boolean;
   isExternal?: boolean;
+  footerHref?: string;
 };
 
 export type LegalLink = {

@@ -33,7 +33,7 @@ export default function Footer() {
               {navigation.map((item) => (
                 <li key={item.label}>
                   <Link
-                    href={item.href}
+                    href={item.footerHref || item.href}
                     className="text-gray-700 hover:text-indigo-600 transition"
                   >
                     {item.label}
