@@ -22,6 +22,13 @@ export type Tool = {
   image: string;
 };
 
+type AboutContent = {
+  title: string;
+  description: string;
+  image?: string;
+  imageAlt?: string;
+};
+
 export type Sections = {
   hero: {
     title: string;
@@ -37,6 +44,7 @@ export type Sections = {
     description: string;
     image: string;
     imageAlt: string;
+    content: AboutContent;
   };
   services: {
     title: string;

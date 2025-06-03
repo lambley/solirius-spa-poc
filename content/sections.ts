@@ -88,6 +88,13 @@ const sections: Sections = {
       "Solirius Service Centre is dedicated to providing exceptional support and continuous improvement for your business. Our team of experts is here to help you succeed.",
     image: "https://placehold.co/600x400.png",
     imageAlt: "Solirius Service Centre Team",
+    content: {
+      title: "Our Mission",
+      description:
+        "To deliver outstanding service and continuous improvement to our clients, ensuring their success and satisfaction.",
+      image: "https://placehold.co/400.png",
+      imageAlt: "Mission Image",
+    },
   },
   services: {
     title: "Our Services",

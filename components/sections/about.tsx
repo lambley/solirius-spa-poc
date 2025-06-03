@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { sections } from "@/content/sections";
 
 export default function About() {
   const renderAboutContent = () => {
@@ -7,22 +8,30 @@ export default function About() {
     return (
       <div className="flex flex-col lg:flex-row items-center gap-10">
         <div className="flex-1">
-          <h3 className="text-2xl font-semibold text-gray-900">Our Mission</h3>
+          <h3 className="text-2xl font-semibold text-gray-900">
+            {sections.about.content.title}
+          </h3>
           <p className="mt-4 text-gray-600">
-            To provide exceptional service and support to our clients, ensuring
-            their success through dedicated maintenance, continuous improvement,
-            and a commitment to excellence.
+            {sections.about.content.description}
           </p>
         </div>
-        <div className="flex-1">
-          <Image
-            src="https://placehold.co/400.png"
-            width={400}
-            height={400}
-            alt="Mission Image"
-            className="w-full h-auto rounded-lg shadow-md"
-          />
-        </div>
+        {renderAboutImage()}
+      </div>
+    );
+  };
+
+  const renderAboutImage = () => {
+    if (!sections.about.image || !sections.about.imageAlt) return null;
+
+    return (
+      <div className="mb-10 lg:mb-0 lg:w-1/2">
+        <Image
+          src={sections.about.image}
+          alt={sections.about.imageAlt}
+          width={600}
+          height={400}
+          className="w-full h-auto rounded-lg shadow-md"
+        />
       </div>
     );
   };
@@ -32,11 +41,10 @@ export default function About() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-            About Solirius Service Centre
+            {sections.about.title}
           </h2>
           <p className="mt-2 text-lg/8 text-gray-600">
-            More about the Solirius Service Centre, its mission, vision, and
-            values.
+            {sections.about.description}
           </p>
         </div>
         <div className="mx-auto mt-10 grid max-w-2xl pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none">
