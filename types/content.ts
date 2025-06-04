@@ -1,13 +1,13 @@
-import { ImageUrl } from "./globals";
+import { ImageUrl, Href } from "./globals";
 
 export type Service = {
   id: number;
   title: string;
-  href: string;
+  href: Href;
   description: string;
   category: {
     title: string;
-    href: string;
+    href: Href;
   };
 };
 
@@ -47,7 +47,7 @@ type SubmitButton = {
 
 type LinkToPage = {
   label: string;
-  href: string;
+  href: Href;
   hrefText?: string;
   target?: "_blank" | "_self";
   rel?: "noopener noreferrer" | "noreferrer";

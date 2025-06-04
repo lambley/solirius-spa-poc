@@ -1,16 +1,16 @@
-import { Address } from "./globals";
+import { Address, Href } from "./globals";
 
 export type NavigationItem = {
   label: string;
-  href: string;
+  href: Href;
   icon?: boolean;
   isExternal?: boolean;
-  footerHref?: string;
+  footerHref?: Href;
 };
 
 export type LegalLink = {
   label: string;
-  href: string;
+  href: Href;
 };
 
 export type FooterAddress = {

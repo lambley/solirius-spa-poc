@@ -10,3 +10,16 @@ export type ImageUrl =
   | `${"/"}${string}`
   | `http://${string}`
   | `https://${string}`;
+
+// Href types for routing, external links, and anchors
+type RouteHref =
+  | `/${string}`
+  | `/${string}/`
+  | `/${string}#${string}`
+  | `/${string}?${string}`;
+
+type ExternalHref = `http://${string}` | `https://${string}`;
+
+type AnchorHref = `#${string}`;
+
+export type Href = RouteHref | ExternalHref | AnchorHref;
