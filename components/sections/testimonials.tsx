@@ -18,10 +18,10 @@ export default function Testimonials({
           >
             <div className="flex items-center gap-x-4">
               <Image
-                src={testimonial.image}
+                src={testimonial.imageUrl}
                 width={100}
                 height={100}
-                alt={`${testimonial.name}'s photo`}
+                alt={testimonial.imageAlt}
                 className="h-10 w-10 rounded-full"
               />
               <div>
@@ -71,10 +71,10 @@ export default function Testimonials({
               className="flex items-center bg-white rounded-lg shadow-sm p-4"
             >
               <Image
-                src={tool.image}
+                src={tool.imageUrl}
                 width={40}
                 height={40}
-                alt={`${tool.name} logo`}
+                alt={tool.imageAlt}
                 className="rounded mr-4"
               />
               <span className="text-base font-medium text-gray-800">

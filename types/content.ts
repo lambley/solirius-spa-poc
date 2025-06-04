@@ -1,3 +1,5 @@
+import { ImageUrl } from "./globals";
+
 export type Service = {
   id: number;
   title: string;
@@ -13,19 +15,21 @@ export type Testimonial = {
   id: number;
   name: string;
   role: string;
-  image: string;
+  imageUrl: ImageUrl;
+  imageAlt: string;
   testimonial: string;
 };
 
 export type Tool = {
   name: string;
-  image: string;
+  imageUrl: ImageUrl;
+  imageAlt: string;
 };
 
 type AboutContent = {
   title: string;
   description: string;
-  image?: string;
+  imageUrl?: ImageUrl;
   imageAlt?: string;
 };
 
@@ -62,7 +66,7 @@ export type Sections = {
   about: {
     title: string;
     description: string;
-    image: string;
+    imageUrl: ImageUrl;
     imageAlt: string;
     content: AboutContent;
     linkToPage?: LinkToPage;

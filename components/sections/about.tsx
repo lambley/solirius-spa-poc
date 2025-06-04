@@ -38,12 +38,12 @@ export default function About({
   };
 
   const renderAboutImage = () => {
-    if (!sections.about.image || !sections.about.imageAlt) return null;
+    if (!sections.about.imageUrl || !sections.about.imageAlt) return null;
 
     return (
       <div className="mb-10 lg:mb-0 lg:w-1/2">
         <Image
-          src={sections.about.image}
+          src={sections.about.imageUrl}
           alt={sections.about.imageAlt}
           width={600}
           height={400}

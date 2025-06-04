@@ -32,7 +32,8 @@ const testimonials: Testimonial[] = [
     id: 1,
     name: "John Doe",
     role: "Software Engineer",
-    image: "https://placehold.co/100.png",
+    imageUrl: "https://placehold.co/100.png",
+    imageAlt: "John Doe's photo",
     testimonial:
       "Solirius Service Centre has transformed our operations with their exceptional service and continuous improvement strategies.",
   },
@@ -40,7 +41,8 @@ const testimonials: Testimonial[] = [
     id: 2,
     name: "Jane Smith",
     role: "Project Manager",
-    image: "https://placehold.co/100.png",
+    imageUrl: "https://placehold.co/100.png",
+    imageAlt: "Jane Smith's photo",
     testimonial:
       "The incident management support from Solirius has been invaluable in keeping our projects on track.",
   },
@@ -48,18 +50,39 @@ const testimonials: Testimonial[] = [
     id: 3,
     name: "Alice Johnson",
     role: "IT Director",
-    image: "https://placehold.co/100.png",
+    imageUrl: "https://placehold.co/100.png",
+    imageAlt: "Alice Johnson's photo",
     testimonial:
       "Their discovery services helped us identify key areas for improvement, leading to significant efficiency gains.",
   },
 ];
 
 const tools: Tool[] = [
-  { name: "Jira", image: "https://placehold.co/100.png" },
-  { name: "GitHub", image: "https://placehold.co/100.png" },
-  { name: "Google Suite", image: "https://placehold.co/100.png" },
-  { name: "Office", image: "https://placehold.co/100.png" },
-  { name: "Kandji", image: "https://placehold.co/100.png" },
+  {
+    name: "Jira",
+    imageUrl: "https://placehold.co/100.png",
+    imageAlt: "Jira logo",
+  },
+  {
+    name: "GitHub",
+    imageUrl: "https://placehold.co/100.png",
+    imageAlt: "GitHub logo",
+  },
+  {
+    name: "Google Suite",
+    imageUrl: "https://placehold.co/100.png",
+    imageAlt: "Google Suite logo",
+  },
+  {
+    name: "Office",
+    imageUrl: "https://placehold.co/100.png",
+    imageAlt: "Office logo",
+  },
+  {
+    name: "Kandji",
+    imageUrl: "https://placehold.co/100.png",
+    imageAlt: "Kandji logo",
+  },
 ];
 
 const sections: Sections = {
@@ -87,13 +110,13 @@ const sections: Sections = {
     title: "About Us",
     description:
       "Solirius Service Centre is dedicated to providing exceptional support and continuous improvement for your business. Our team of experts is here to help you succeed.",
-    image: "https://placehold.co/600x400.png",
+    imageUrl: "https://placehold.co/600x400.png",
     imageAlt: "Solirius Service Centre Team",
     content: {
       title: "Our Mission",
       description:
         "To deliver outstanding service and continuous improvement to our clients, ensuring their success and satisfaction.",
-      image: "https://placehold.co/400.png",
+      imageUrl: "https://placehold.co/400.png",
       imageAlt: "Mission Image",
     },
     linkToPage: {
