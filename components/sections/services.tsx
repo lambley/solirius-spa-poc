@@ -76,7 +76,9 @@ export default function Services({
         </div>
         {sections.services.linkToPage && showLinkToPage && renderServicesLink()}
       </div>
-      {children && <div className="mx-auto mt-10 max-w-2xl">{children}</div>}
+      {children && (
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">{children}</div>
+      )}
     </div>
   );
 }

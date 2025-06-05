@@ -68,7 +68,9 @@ export default function About({
           {renderAboutContent()}
         </div>
       </div>
-      {children && <div className="mx-auto mt-10 max-w-2xl">{children}</div>}
+      {children && (
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">{children}</div>
+      )}
     </div>
   );
 }
