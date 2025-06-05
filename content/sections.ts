@@ -8,6 +8,8 @@ const services: Service[] = [
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
     category: { title: "Software", href: "#" },
+    imageUrl: "https://placehold.co/400.png",
+    imageAlt: "Placeholder image for Continuous Improvement",
   },
   {
     id: 2,
@@ -16,6 +18,8 @@ const services: Service[] = [
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
     category: { title: "Incidents", href: "#" },
+    imageUrl: "https://placehold.co/400.png",
+    imageAlt: "Placeholder image for Incident Management",
   },
   {
     id: 3,
@@ -24,6 +28,8 @@ const services: Service[] = [
     description:
       "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
     category: { title: "Discovery", href: "#" },
+    imageUrl: "https://placehold.co/400.png",
+    imageAlt: "Placeholder image for Discovery",
   },
 ];
 

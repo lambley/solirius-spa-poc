@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ServiceCard from "@/components/shared/ServiceCard";
 import { sections, services } from "@/content/sections";
 import { SectionProps } from "@/types/components";
 
@@ -8,38 +9,15 @@ export default function Services({
 }: SectionProps) {
   const renderServices = () => {
     return services.map((service) => (
-      <article
+      <ServiceCard
         key={service.id}
-        className="flex max-w-xl flex-col items-start justify-between"
-      >
-        <div className="group relative">
-          <h3 className="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
-            <a href={service.href}>
-              <span className="absolute inset-0" />
-              {service.title}
-            </a>
-          </h3>
-          <div className="flex items-center gap-x-4 text-xs">
-            <a
-              href={service.category.href}
-              className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
-            >
-              {service.category.title}
-            </a>
-          </div>
-          <p className="mt-5 line-clamp-3 text-sm/6 text-gray-600">
-            {service.description}
-          </p>
-        </div>
-        <div className="relative mt-8 flex items-center gap-x-4">
-          <Image
-            src="https://placehold.co/400.png"
-            width={400}
-            height={400}
-            alt="placeholder"
-          />
-        </div>
-      </article>
+        title={service.title}
+        href={service.href}
+        description={service.description}
+        category={service.category}
+        imageUrl={service.imageUrl}
+        imageAlt={service.imageAlt}
+      />
     ));
   };
 

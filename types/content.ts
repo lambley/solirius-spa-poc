@@ -9,6 +9,8 @@ export type Service = {
     title: string;
     href: Href;
   };
+  imageUrl?: ImageUrl;
+  imageAlt?: string;
 };
 
 export type Testimonial = {

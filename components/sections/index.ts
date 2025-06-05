@@ -1,8 +1,7 @@
-import Hero from "./hero";
-import About from "./about";
-import Services from "./services";
-import Testimonials from "./testimonials";
-import Contact from "./contact";
+import Hero from "./Hero";
+import About from "./About";
+import Services from "./Services";
+import Testimonials from "./Testimonials";
+import Contact from "./Contact";
 
 export { Hero, About, Services, Testimonials, Contact };
-
