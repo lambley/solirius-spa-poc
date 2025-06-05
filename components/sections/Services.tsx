@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ServiceCard from "@/components/shared/ServiceCard";
 import { sections, services } from "@/content/sections";
 import { SectionProps } from "@/types/components";

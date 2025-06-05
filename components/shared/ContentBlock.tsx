@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { AdditionalPageContentBlock } from "@/types/pages";
 
-interface ContentBlockProps extends AdditionalPageContentBlock {}
-
 // This component is used to render additional content blocks on pages like About, Services, and Testimonials.
 export default function ContentBlock({
   title,
@@ -11,7 +9,7 @@ export default function ContentBlock({
   imageAlt,
   children,
   blockClasses = "",
-}: ContentBlockProps) {
+}: AdditionalPageContentBlock) {
   return (
     <div
       className={`flex flex-col lg:flex-row items-center gap-10 ${blockClasses}`}
