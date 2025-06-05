@@ -3,14 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { usePathname } from "next/navigation";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavigationItem } from "@/types/layout";
 import { navigation } from "@/content/layout";
 
 function DesktopNav() {
-  const pathname = usePathname();
   return (
     <>
       <div className="flex lg:flex-1">
@@ -55,7 +53,6 @@ function MobileNav({
   open: boolean;
   setOpen: (open: boolean) => void;
 }) {
-  const pathname = usePathname();
   return (
     <Dialog open={open} onClose={setOpen} className="lg:hidden">
       <div className="fixed inset-0 z-50" />
