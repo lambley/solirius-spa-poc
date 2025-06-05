@@ -23,3 +23,11 @@ type ExternalHref = `http://${string}` | `https://${string}`;
 type AnchorHref = `#${string}`;
 
 export type Href = RouteHref | ExternalHref | AnchorHref;
+
+export type StaticPage = {
+  title: string;
+  description: string;
+  actionText?: string;
+  actionHref?: Href;
+  actionClass?: string;
+};
