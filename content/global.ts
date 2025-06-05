@@ -37,7 +37,7 @@ export const notFoundPage: StaticPage = {
   title: "Page Not Found",
   description:
     "The page you are looking for does not exist. It may have been moved, deleted, or never existed in the first place. Please check the URL or return to the homepage.",
-  actionText: "Go back home",
+  actionText: "Go to home",
   actionHref: "/",
   actionClass:
     "inline-block rounded bg-indigo-600 px-4 py-2 text-white font-semibold hover:bg-indigo-500 transition",

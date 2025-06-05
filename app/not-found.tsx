@@ -14,7 +14,7 @@ export default function NotFound() {
         target="_self"
         rel="noopener noreferrer"
       >
-        Go back home
+        {notFoundPage.actionText || "Go to Home"}
       </Link>
     </div>
   );
