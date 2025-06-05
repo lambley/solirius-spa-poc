@@ -9,31 +9,6 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavigationItem } from "@/types/layout";
 import { navigation } from "@/content/layout";
 
-function getNavHref(item: NavigationItem, pathname: string) {
-  // Home page: use hash links for scrolling
-  if (pathname === "/") {
-    if (item.href.startsWith("#")) return item.href;
-    // fallback for home icon
-    if (item.icon) return "#hero";
-    return item.href;
-  }
-  // Other pages: use route links
-  switch (item.label.toLowerCase()) {
-    case "about":
-      return "/about";
-    case "services":
-      return "/services";
-    case "testimonials":
-      return "/testimonials";
-    case "contact":
-      return "/contact";
-    case "home":
-      return "/";
-    default:
-      return item.href;
-  }
-}
-
 function DesktopNav() {
   const pathname = usePathname();
   return (
@@ -42,11 +17,7 @@ function DesktopNav() {
         {navigation
           .filter((item) => item.icon)
           .map((item) => (
-            <Link
-              key={item.label}
-              href={getNavHref(item, pathname)}
-              className="-m-1.5 p-1.5"
-            >
+            <Link key={item.label} href={item.href} className="-m-1.5 p-1.5">
               <span className="sr-only">Solirius Reply</span>
               <Image
                 alt=""
@@ -64,7 +35,7 @@ function DesktopNav() {
           .map((item: NavigationItem) => (
             <Link
               key={item.label}
-              href={getNavHref(item, pathname)}
+              href={item.href}
               target="_self"
               rel="noreferrer noopener"
               className="text-sm/6 font-semibold text-gray-900"
@@ -95,7 +66,7 @@ function MobileNav({
             .map((item) => (
               <Link
                 key={item.label}
-                href={getNavHref(item, pathname)}
+                href={item.href}
                 className="-m-1.5 p-1.5"
                 onClick={() => setOpen(false)}
               >
@@ -126,7 +97,7 @@ function MobileNav({
                 .map((item: NavigationItem) => (
                   <Link
                     key={item.label}
-                    href={getNavHref(item, pathname)}
+                    href={item.href}
                     target="_self"
                     rel="noreferrer noopener"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
