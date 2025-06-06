@@ -6,9 +6,9 @@ const services: Service[] = [
     title: "Continuous Improvement",
     href: "#",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "We drive continuous improvement through data-driven analysis and incremental changes. Our focus is on efficiency, quality, and customer satisfaction, adapting to evolving needs.",
     category: { title: "Software", href: "#" },
-    imageUrl: "https://placehold.co/400.png",
+    imageUrl: "/continuous-improvement.jpg",
     imageAlt: "Placeholder image for Continuous Improvement",
   },
   {
@@ -16,9 +16,9 @@ const services: Service[] = [
     title: "Incident Management",
     href: "#",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "We provide robust incident management based on ITIL best practices, ensuring quick response and resolution. Our on-call teams and monitoring systems ensure service stability.",
     category: { title: "Incidents", href: "#" },
-    imageUrl: "https://placehold.co/400.png",
+    imageUrl: "/incident-management.jpg",
     imageAlt: "Placeholder image for Incident Management",
   },
   {
@@ -26,9 +26,9 @@ const services: Service[] = [
     title: "Discovery",
     href: "#",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
+      "Our service discovery process offers a 'health-check' to understand your service's context and support needs. We identify gaps, risks, and dependencies to ensure a smooth service transition.",
     category: { title: "Discovery", href: "#" },
-    imageUrl: "https://placehold.co/400.png",
+    imageUrl: "/discovery.jpg",
     imageAlt: "Placeholder image for Discovery",
   },
 ];
@@ -38,7 +38,7 @@ const testimonials: Testimonial[] = [
     id: 1,
     name: "John Doe",
     role: "Software Engineer",
-    imageUrl: "https://placehold.co/100.png",
+    imageUrl: "/testimonial-1.png",
     imageAlt: "John Doe's photo",
     testimonial:
       "Solirius Service Centre has transformed our operations with their exceptional service and continuous improvement strategies.",
@@ -47,7 +47,7 @@ const testimonials: Testimonial[] = [
     id: 2,
     name: "Jane Smith",
     role: "Project Manager",
-    imageUrl: "https://placehold.co/100.png",
+    imageUrl: "/testimonial-2.png",
     imageAlt: "Jane Smith's photo",
     testimonial:
       "The incident management support from Solirius has been invaluable in keeping our projects on track.",
@@ -56,7 +56,7 @@ const testimonials: Testimonial[] = [
     id: 3,
     name: "Alice Johnson",
     role: "IT Director",
-    imageUrl: "https://placehold.co/100.png",
+    imageUrl: "/testimonial-3.png",
     imageAlt: "Alice Johnson's photo",
     testimonial:
       "Their discovery services helped us identify key areas for improvement, leading to significant efficiency gains.",
@@ -66,27 +66,27 @@ const testimonials: Testimonial[] = [
 const tools: Tool[] = [
   {
     name: "Jira",
-    imageUrl: "https://placehold.co/100.png",
+    imageUrl: "/jira-logo.png",
     imageAlt: "Jira logo",
   },
   {
     name: "GitHub",
-    imageUrl: "https://placehold.co/100.png",
+    imageUrl: "/github-logo.png",
     imageAlt: "GitHub logo",
   },
   {
     name: "Google Suite",
-    imageUrl: "https://placehold.co/100.png",
+    imageUrl: "/google-logo.png",
     imageAlt: "Google Suite logo",
   },
   {
     name: "Office",
-    imageUrl: "https://placehold.co/100.png",
+    imageUrl: "/office-logo.png",
     imageAlt: "Office logo",
   },
   {
     name: "Kandji",
-    imageUrl: "https://placehold.co/100.png",
+    imageUrl: "/kandji-logo.png",
     imageAlt: "Kandji logo",
   },
 ];
@@ -115,13 +115,13 @@ const sections: Sections = {
   about: {
     title: "About Us",
     description:
-      "Solirius Service Centre is dedicated to providing exceptional support and continuous improvement for your business. Our team of experts is here to help you succeed.",
-    imageUrl: "https://placehold.co/600x400.png",
+      "Solirius Service Centre provides dedicated customer and technical support, empowering businesses to enhance customer satisfaction and scale support without the overhead of in-house teams. Our cost-effective, flexible, and scalable solutions improve service levels, allowing you to focus on your core business and build customer loyalty. We streamline operations and help you achieve your goals with expert support.",
+    imageUrl: "/ourmission-section.jpg",
     imageAlt: "Solirius Service Centre Team",
     content: {
       title: "Our Mission",
       description:
-        "To deliver outstanding service and continuous improvement to our clients, ensuring their success and satisfaction.",
+        "To be the trusted partner that empowers businesses through exceptional, adaptable, and efficient support services. We are driven to elevate client success and satisfaction by providing specialized expertise, fostering continuous improvement, and enabling a sharp focus on core business objectives.",
       imageUrl: "https://placehold.co/400.png",
       imageAlt: "Mission Image",
     },

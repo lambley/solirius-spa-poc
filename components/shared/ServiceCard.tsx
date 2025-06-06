@@ -38,7 +38,7 @@ export default function ServiceCard({
             {category.title}
           </a>
         </div>
-        <p className="mt-5 line-clamp-3 text-sm/6 text-gray-600">
+        <p className="mt-5 text-sm/6 text-gray-600">
           {description}
         </p>
       </div>

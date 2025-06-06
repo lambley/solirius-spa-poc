@@ -4,8 +4,8 @@ const AboutAdditionalContent: AdditionalPageContentBlock[] = [
   {
     title: "Our Vision",
     description:
-      "We aim to create a platform that connects people with shared interests, fostering community and collaboration. Our goal is to empower individuals to share their passions and knowledge, making the world a more connected place.",
-    imageUrl: "https://placehold.co/600x400.png",
+      "To be the leading provider of exceptional support services, recognised for enabling our clients' success, driving innovation, and setting the standard for service excellence and efficiency in the industry. We aim to create lasting partnerships and empower businesses to reach their fullest potential by handling their critical support functions.",
+    imageUrl: "/ourvision-section.jpg",
     imageAlt: "Vision Image",
     blockClasses: "mt-10 lg:mt-20",
   },
@@ -13,7 +13,7 @@ const AboutAdditionalContent: AdditionalPageContentBlock[] = [
     title: "Our Values",
     description:
       "We believe in integrity, innovation, and inclusivity. Our platform is built on the principles of transparency and respect, ensuring that every user feels valued and heard. We strive to create a safe and welcoming environment for all.",
-    imageUrl: "https://placehold.co/600x400.png",
+    imageUrl: "/ourvalues-section.png",
     imageAlt: "Values Image",
     blockClasses: "mt-10 lg:mt-20",
   },
