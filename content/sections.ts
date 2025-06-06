@@ -121,7 +121,7 @@ const sections: Sections = {
     content: {
       title: "Our Mission",
       description:
-        "To be the trusted partner that empowers businesses through exceptional, adaptable, and efficient support services. We are driven to elevate client success and satisfaction by providing specialized expertise, fostering continuous improvement, and enabling a sharp focus on core business objectives.",
+        "To be the trusted partner that empowers businesses through exceptional, adaptable, and efficient support services. We are driven to elevate client success and satisfaction by providing specialised expertise, fostering continuous improvement, and enabling a sharp focus on core business objectives.",
       imageUrl: "https://placehold.co/400.png",
       imageAlt: "Mission Image",
     },
