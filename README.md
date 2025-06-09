@@ -30,3 +30,6 @@ npm run build
 ```
 
 Currently, permissions for deloyment are set to my personal Vercel account. If you want to deploy to your own Vercel account, you will need to set up the project in your Vercel dashboard and link it to this repository.
+
+---
+Trigger Vercel redeploy: 1
