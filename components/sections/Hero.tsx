@@ -8,14 +8,14 @@ export default function Hero() {
         {sections.hero.announcement && (
           <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
             {sections.hero.announcement.label}{" "}
-            <a
+            <Link
               href={sections.hero.announcement.href}
               className="font-semibold text-indigo-600"
             >
               <span aria-hidden="true" className="absolute inset-0" />
               {sections.hero.announcement.hrefText}
               <span aria-hidden="true">&rarr;</span>
-            </a>
+            </Link>
           </div>
         )}
       </div>

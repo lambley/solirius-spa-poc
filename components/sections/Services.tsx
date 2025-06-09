@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ServiceCard from "@/components/shared/ServiceCard";
 import { sections, services } from "@/content/sections";
 import { SectionProps } from "@/types/components";
@@ -25,14 +26,14 @@ export default function Services({
 
     return (
       <div className="mt-10 text-center">
-        <a
+        <Link
           href={sections.services.linkToPage.href}
           target={sections.services.linkToPage.target}
           rel={sections.services.linkToPage.rel}
           className="text-indigo-600 hover:text-indigo-500 font-semibold"
         >
           {sections.services.linkToPage.label}
-        </a>
+        </Link>
       </div>
     );
   };

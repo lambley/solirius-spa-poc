@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ContentBlock from "../shared/ContentBlock";
 import { sections } from "@/content/sections";
 import { SectionProps } from "@/types/components";
@@ -26,7 +27,7 @@ export default function About({
           >
             {sections.about.linkToPage && showLinkToPage && (
               <div className="mt-10 text-center">
-                <a
+                <Link
                   href={sections.about.linkToPage.href}
                   target={sections.about.linkToPage.target}
                   rel={sections.about.linkToPage.rel}
@@ -34,7 +35,7 @@ export default function About({
                 >
                   {sections.about.linkToPage.label}{" "}
                   <span aria-hidden="true">&rarr;</span>
-                </a>
+                </Link>
               </div>
             )}
           </ContentBlock>

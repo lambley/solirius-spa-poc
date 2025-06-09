@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { sections, testimonials, tools } from "@/content/sections";
 import { SectionProps } from "@/types/components";
@@ -45,7 +46,7 @@ export default function Testimonials({
 
     return (
       <div className="mt-10 text-center">
-        <a
+        <Link
           href={sections.testimonials.linkToPage.href}
           target={sections.testimonials.linkToPage.target}
           rel={sections.testimonials.linkToPage.rel}
@@ -53,7 +54,7 @@ export default function Testimonials({
         >
           {sections.testimonials.linkToPage.label}{" "}
           <span aria-hidden="true">&rarr;</span>
-        </a>
+        </Link>
       </div>
     );
   };
