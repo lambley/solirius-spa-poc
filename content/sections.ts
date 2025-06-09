@@ -99,16 +99,16 @@ const sections: Sections = {
     cta: {
       primary: {
         label: "Get in touch",
-        href: "#",
+        href: "#contact",
       },
       secondary: {
         label: "Learn more",
-        href: "#",
+        href: "#about",
       },
     },
     announcement: {
       label: "Announcing our latest service offering",
-      href: "#",
+      href: "/services",
       hrefText: "Learn more",
     },
   },
