@@ -7,7 +7,7 @@ interface ServiceCardProps {
   description: string;
   category: {
     title: string;
-    href: string;
+    href?: string;
   };
   imageUrl?: string;
   imageAlt?: string;
