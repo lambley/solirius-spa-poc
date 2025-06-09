@@ -2,14 +2,10 @@ import { services } from "@/content/sections";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 
-interface ServicePageProps {
-  params: { id: string };
-}
+type ServicePageProps = Promise<{ id: string }>;
 
-export default async function ServicePage({ params }: ServicePageProps) {
-  // ignore the warning: "'await' has no effect on the type of this expression.ts(80007)"
-  // this is very much needed: https://nextjs.org/docs/messages/sync-dynamic-apis
-  const { id } = await params;
+export default async function ServicePage(props: { params: ServicePageProps }) {
+  const { id } = await props.params;
   const service = services.find((s) => String(s.id) === id);
 
   if (!service) return notFound();
