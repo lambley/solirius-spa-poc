@@ -4,7 +4,7 @@ const services: Service[] = [
   {
     id: 1,
     title: "Continuous Improvement",
-    href: "#",
+    href: "/services/1",
     description:
       "We drive continuous improvement through data-driven analysis and incremental changes. Our focus is on efficiency, quality, and customer satisfaction, adapting to evolving needs.",
     category: { title: "Software", href: "#" },
@@ -14,7 +14,7 @@ const services: Service[] = [
   {
     id: 2,
     title: "Incident Management",
-    href: "#",
+    href: "/services/2",
     description:
       "We provide robust incident management based on ITIL best practices, ensuring quick response and resolution. Our on-call teams and monitoring systems ensure service stability.",
     category: { title: "Incidents", href: "#" },
@@ -24,7 +24,7 @@ const services: Service[] = [
   {
     id: 3,
     title: "Discovery",
-    href: "#",
+    href: "/services/3",
     description:
       "Our service discovery process offers a 'health-check' to understand your service's context and support needs. We identify gaps, risks, and dependencies to ensure a smooth service transition.",
     category: { title: "Discovery", href: "#" },

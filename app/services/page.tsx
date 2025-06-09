@@ -1,5 +1,3 @@
-"use client";
-
 import SectionPage from "@/components/shared/SectionPage";
 import { Services } from "@/components/sections";
 import { renderAdditionalContent } from "@/utils/presenters";

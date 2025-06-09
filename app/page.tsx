@@ -1,5 +1,3 @@
-"use client";
-
 import * as Sections from "../components/sections/index";
 
 export default function Home() {
