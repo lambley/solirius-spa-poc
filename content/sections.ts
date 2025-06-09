@@ -7,7 +7,7 @@ const services: Service[] = [
     href: "/services/1",
     description:
       "We drive continuous improvement through data-driven analysis and incremental changes. Our focus is on efficiency, quality, and customer satisfaction, adapting to evolving needs.",
-    category: { title: "Software", href: "#" },
+    category: { title: "Software" },
     imageUrl: "/continuous-improvement.jpg",
     imageAlt: "Placeholder image for Continuous Improvement",
   },
@@ -17,7 +17,7 @@ const services: Service[] = [
     href: "/services/2",
     description:
       "We provide robust incident management based on ITIL best practices, ensuring quick response and resolution. Our on-call teams and monitoring systems ensure service stability.",
-    category: { title: "Incidents", href: "#" },
+    category: { title: "Incidents" },
     imageUrl: "/incident-management.jpg",
     imageAlt: "Placeholder image for Incident Management",
   },
@@ -27,7 +27,7 @@ const services: Service[] = [
     href: "/services/3",
     description:
       "Our service discovery process offers a 'health-check' to understand your service's context and support needs. We identify gaps, risks, and dependencies to ensure a smooth service transition.",
-    category: { title: "Discovery", href: "#" },
+    category: { title: "Discovery" },
     imageUrl: "/discovery.jpg",
     imageAlt: "Placeholder image for Discovery",
   },

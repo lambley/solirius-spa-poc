@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface ServiceCardProps {
   title: string;
@@ -25,31 +26,34 @@ export default function ServiceCard({
     <article className="flex max-w-xl flex-col items-start justify-between">
       <div className="group relative">
         <h3 className="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
-          <a href={href}>
-            <span className="absolute inset-0" />
+          <Link href={href} className="relative z-10">
             {title}
-          </a>
+          </Link>
         </h3>
-        <div className="flex items-center gap-x-4 text-xs">
-          <a
-            href={category.href}
-            className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
-          >
-            {category.title}
-          </a>
+        {category && (
+          <div>
+            <div className="flex items-center gap-x-4 text-xs">
+              {category.href ? (
+                <Link
+                  href={category.href}
+                  className="text-gray-500 hover:text-gray-600"
+                >
+                  {category.title}
+                </Link>
+              ) : (
+                <span className="text-gray-500">{category.title}</span>
+              )}
+            </div>
+          </div>
+        )}
+
+        <p className="mt-5 text-sm/6 text-gray-600">{description}</p>
+      </div>
+      <Link href={href}>
+        <div className="relative mt-8 flex items-center gap-x-4">
+          <Image src={imageUrl} width={400} height={400} alt={imageAlt} />
         </div>
-        <p className="mt-5 text-sm/6 text-gray-600">
-          {description}
-        </p>
-      </div>
-      <div className="relative mt-8 flex items-center gap-x-4">
-        <Image
-          src={imageUrl}
-          width={400}
-          height={400}
-          alt={imageAlt}
-        />
-      </div>
+      </Link>
     </article>
   );
 }

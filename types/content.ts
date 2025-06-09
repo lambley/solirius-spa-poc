@@ -7,7 +7,7 @@ export type Service = {
   description: string;
   category: {
     title: string;
-    href: Href;
+    href?: Href;
   };
   imageUrl?: ImageUrl;
   imageAlt?: string;
