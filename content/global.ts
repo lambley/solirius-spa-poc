@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Address, StaticPage } from "@/types/globals";
 
 const address: Address = {
@@ -41,4 +42,43 @@ export const notFoundPage: StaticPage = {
   actionHref: "/",
   actionClass:
     "inline-block rounded bg-indigo-600 px-4 py-2 text-white font-semibold hover:bg-indigo-500 transition",
+};
+
+// a few things hardcoded for now, but will be replaced with dynamic content later
+export const metadata: Metadata = {
+  metadataBase: new URL("https://solirius-spa-poc.vercel.app"),
+  title: "Solirius Reply - Service Centre",
+  description: "Delivering digital excellence",
+  keywords: [
+    "digital transformation",
+    "technology solutions",
+    "consulting",
+    "software development",
+    "cloud services",
+  ],
+  authors: [{ name: "Solirius Reply" }],
+  creator: "Solirius Reply",
+  openGraph: {
+    title: "Solirius Reply",
+    description: "Delivering digital excellence",
+    url: new URL("https://solirius-spa-poc.vercel.app"),
+    siteName: "Solirius Reply",
+    images: [
+      {
+        url: "og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Solirius Reply - Delivering digital excellence",
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Solirius Reply",
+    description: "Delivering digital excellence",
+    images: ["/images/og-image.png"],
+    creator: "@solirius_reply",
+  },
 };
