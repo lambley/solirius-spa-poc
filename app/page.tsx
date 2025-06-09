@@ -5,7 +5,7 @@ export default function Home() {
     <div className="bg-white">
       <div
         id="hero"
-        className="relative isolate px-6 pt-14 lg:px-8 border-b border-gray-200"
+        className="relative isolate px-6 pt-14 lg:px-8 border-gray-200"
       >
         <Sections.Hero />
       </div>
