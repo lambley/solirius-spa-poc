@@ -32,6 +32,7 @@ export default function RootLayout({
         <Layout.Navigation />
         {children}
         <Layout.Footer />
+        <Layout.BackToTopButton />
       </body>
     </html>
   );
