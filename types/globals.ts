@@ -24,7 +24,7 @@ type AnchorHref = `#${string}`;
 
 export type Href = RouteHref | ExternalHref | AnchorHref;
 
-export type StaticPage = {
+export type SitewidePage = {
   title: string;
   description: string;
   actionText?: string;
