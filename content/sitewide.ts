@@ -28,6 +28,16 @@ export const notFoundPage: SitewidePage = {
     "inline-block rounded bg-indigo-600 px-4 py-2 text-white font-semibold hover:bg-indigo-500 transition",
 };
 
+export const errorPage: SitewidePage = {
+  title: "Error",
+  description:
+    "An unexpected error has occurred. Please try again later or return to the homepage.",
+  actionText: "Go to home",
+  actionHref: "/",
+  actionClass:
+    "inline-block rounded bg-red-600 px-4 py-2 text-white font-semibold hover:bg-red-500 transition",
+};
+
 export const sitewidePages = {
   cookies: cookiesPage,
   privacy: privacyPage,
