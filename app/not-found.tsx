@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { notFoundPage } from "@/content/global";
+import { notFoundPage } from "@/content/sitewide";
 
 export default function NotFound() {
   return (
