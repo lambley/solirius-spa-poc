@@ -1,7 +1,7 @@
-import Link from "next/link";
 import ServiceCard from "@/components/shared/ServiceCard";
 import { sections, services } from "@/content/sections";
 import { SectionProps } from "@/types/components";
+import SmartLink from "@/components/shared/SmartLink";
 
 export default function Services({
   showLinkToPage = true,
@@ -26,14 +26,14 @@ export default function Services({
 
     return (
       <div className="mt-10 text-center">
-        <Link
+        <SmartLink
           href={sections.services.linkToPage.href}
           target={sections.services.linkToPage.target}
           rel={sections.services.linkToPage.rel}
           className="text-indigo-600 hover:text-indigo-500 font-semibold"
         >
           {sections.services.linkToPage.label}
-        </Link>
+        </SmartLink>
       </div>
     );
   };
