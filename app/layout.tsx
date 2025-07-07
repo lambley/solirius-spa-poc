@@ -1,8 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import * as Layout from "../components/layout/index";
-import { metadata } from "@/content/global";
-// Change this font to Roboto
+import globalContent from '@/content/global.json'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export { metadata };
+export const metadata = globalContent.metadata;
 
 export default function RootLayout({
   children,

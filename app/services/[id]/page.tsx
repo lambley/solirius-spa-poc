@@ -1,4 +1,4 @@
-import { services } from "@/content/sections";
+import services from "@/content/sections/services.json";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 
@@ -6,7 +6,7 @@ type ServicePageProps = Promise<{ id: string }>;
 
 export default async function ServicePage(props: { params: ServicePageProps }) {
   const { id } = await props.params;
-  const service = services.find((s) => String(s.id) === id);
+  const service = services.items.find((s) => String(s.id) === id);
 
   if (!service) return notFound();
 

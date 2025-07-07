@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { errorPage } from "@/content/sitewide";
+import { errorPage } from "@/content/sitewideLoader";
 
 export default function Error() {
   return (

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navigation, legalLinks, footerDetails } from "@/content/layout";
+import { navigation, legalLinks, footerDetails } from "@/content/layoutLoader";
 
 export default function Footer() {
   const renderFooterDetails = () => {

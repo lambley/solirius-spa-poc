@@ -1,0 +1,37 @@
+{
+  "title": "Testimonials",
+  "description": "Hear what our clients have to say about their experience with the Solirius Service Centre.",
+  "items": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "role": "Software Engineer",
+      "imageUrl": "/testimonial-1.png",
+      "imageAlt": "John Doe's photo",
+      "testimonial": "Solirius Service Centre has transformed our operations with their exceptional service and continuous improvement strategies."
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "role": "Project Manager",
+      "imageUrl": "/testimonial-2.png",
+      "imageAlt": "Jane Smith's photo",
+      "testimonial": "The incident management support from Solirius has been invaluable in keeping our projects on track."
+    },
+    {
+      "id": 3,
+      "name": "Alice Johnson",
+      "role": "IT Director",
+      "imageUrl": "/testimonial-3.png",
+      "imageAlt": "Alice Johnson's photo",
+      "testimonial": "Their discovery services helped us identify key areas for improvement, leading to significant efficiency gains."
+    }
+  ],
+  "linkToPage": {
+    "label": "Read more testimonials",
+    "href": "/testimonials",
+    "hrefText": "More Testimonials",
+    "target": "_self",
+    "rel": "noreferrer"
+  }
+}

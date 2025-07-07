@@ -3,7 +3,7 @@
 import SectionPage from "@/components/shared/SectionPage";
 import { Testimonials } from "@/components/sections";
 import { renderAdditionalContent } from "@/utils/presenters";
-import { TestimonialAdditionalContent } from "@/content/pages";
+import TestimonialAdditionalContent from "@/content/pages/testimonial.json";
 
 export default function TestimonialPage() {
   return (
