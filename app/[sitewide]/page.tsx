@@ -1,5 +1,5 @@
 import SitewidePages from "@/components/pages/SitewidePages";
-import { sitewidePages } from "@/content/sitewide";
+import { sitewidePages } from "@/content/sitewideLoader";
 import { notFound } from "next/navigation";
 
 type SitewideSlug = keyof typeof sitewidePages;
