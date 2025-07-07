@@ -1,19 +1,18 @@
-import globalContent from '@/content/global.json'
-import { NavigationItem, LegalLink, FooterAddress } from "@/types/layout";
+import globalContent from "@/content/global.json";
+import navigationData from "@/content/navigation.json";
+import legalLinksData from "@/content/legalLinks.json";
 
-const navigation: NavigationItem[] = [
-  { label: "Home", href: "/", icon: true },
-  { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Testimonials", href: "/testimonials" },
-  { label: "Contact", href: "/contact" },
-];
+import type { NavigationItem, LegalLink, FooterAddress } from "@/types/layout";
+import { Href } from "@/types/globals";
 
-const legalLinks: LegalLink[] = [
-  { label: "Terms & Conditions", href: "/terms" },
-  { label: "Privacy Policy", href: "/privacy" },
-  { label: "Cookies Policy", href: "/cookies" },
-];
+const navigation: NavigationItem[] = navigationData.map((item) => ({
+  ...item,
+  href: item.href as Href,
+}));
+const legalLinks: LegalLink[] = legalLinksData.map((item) => ({
+  ...item,
+  href: item.href as Href,
+}));
 
 const footerDetails: FooterAddress = {
   address: globalContent.address,
