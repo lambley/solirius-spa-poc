@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { sections } from "@/content/sections";
+import { contact } from "@/content/sections/contact.json";
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -19,12 +19,12 @@ export default function Contact() {
   };
 
   const fieldConfigs = [
-    sections.contact.form.firstName,
-    sections.contact.form.lastName,
-    sections.contact.form.email,
-    sections.contact.form.phone,
+    contact.form.firstName,
+    contact.form.lastName,
+    contact.form.email,
+    contact.form.phone,
   ];
-  const messageConfig = sections.contact.form.message;
+  const messageConfig = contact.form.message;
 
   const renderFields = () => (
     <>
@@ -74,11 +74,9 @@ export default function Contact() {
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">
-          {sections.contact.title}
+          {contact.title}
         </h2>
-        <p className="mt-2 text-lg/8 text-gray-600">
-          {sections.contact.description}
-        </p>
+        <p className="mt-2 text-lg/8 text-gray-600">{contact.description}</p>
       </div>
       <form className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
@@ -86,10 +84,12 @@ export default function Contact() {
         </div>
         <div className="mt-10">
           <button
-            type={sections.contact.form.submitButton.type}
+            type={
+              contact.form.submitButton.type === "submit" ? "submit" : "button"
+            }
             className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-indigo-600"
           >
-            {sections.contact.form.submitButton.label}
+            {contact.form.submitButton.label}
           </button>
         </div>
       </form>

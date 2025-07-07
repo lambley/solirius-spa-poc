@@ -1,6 +1,6 @@
 import globalContent from "@/content/global.json";
-import navigationData from "@/content/navigation.json";
-import legalLinksData from "@/content/legalLinks.json";
+import navigationData from "@/content/layout/navigation.json";
+import legalLinksData from "@/content/layout/legalLinks.json";
 
 import type { NavigationItem, LegalLink, FooterAddress } from "@/types/layout";
 import { Href } from "@/types/globals";

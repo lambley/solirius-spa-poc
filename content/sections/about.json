@@ -1,0 +1,21 @@
+{
+  "about": {
+    "title": "About Us",
+    "description": "Solirius Service Centre provides dedicated customer and technical support, empowering businesses to enhance customer satisfaction and scale support without the overhead of in-house teams. Our cost-effective, flexible, and scalable solutions improve service levels, allowing you to focus on your core business and build customer loyalty. We streamline operations and help you achieve your goals with expert support.",
+    "imageUrl": "/ourmission-section.jpg",
+    "imageAlt": "Solirius Service Centre Team",
+    "content": {
+      "title": "Our Mission",
+      "description": "To be the trusted partner that empowers businesses through exceptional, adaptable, and efficient support services. We are driven to elevate client success and satisfaction by providing specialised expertise, fostering continuous improvement, and enabling a sharp focus on core business objectives.",
+      "imageUrl": "https://placehold.co/400.png",
+      "imageAlt": "Mission Image"
+    },
+    "linkToPage": {
+      "label": "Learn more about us",
+      "href": "/about",
+      "hrefText": "About Us",
+      "target": "_self",
+      "rel": "noreferrer"
+    }
+  }
+}
