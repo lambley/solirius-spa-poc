@@ -10,7 +10,9 @@ export default function TestimonialPage() {
     <SectionPage
       SectionComponent={Testimonials}
       sectionProps={{ showLinkToPage: false, showToolsSection: false }}
-      additionalContent={renderAdditionalContent(TestimonialAdditionalContent)}
+      additionalContent={renderAdditionalContent(
+        Object.values(TestimonialAdditionalContent)
+      )}
     />
   );
 }

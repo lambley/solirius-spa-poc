@@ -10,7 +10,9 @@ export default function AboutPage() {
     <SectionPage
       SectionComponent={About}
       sectionProps={{ showLinkToPage: false }}
-      additionalContent={renderAdditionalContent(AboutAdditionalContent)}
+      additionalContent={renderAdditionalContent(
+        Object.values(AboutAdditionalContent)
+      )}
     />
   );
 }
