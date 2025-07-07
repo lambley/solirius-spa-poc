@@ -98,7 +98,51 @@ export default defineConfig({
           },
         ],
       },
-      // add pages collection after refactoring content/pages files
+      {
+        name: "sitePages", // no spaces recommended in the `name` field
+        label: "Site Pages",
+        path: "content/pages",
+        format: "json",
+        match: {
+          include: "*",
+        },
+        fields: [
+          {
+            type: "object",
+            name: "paragraphOne",
+            label: "Paragraph One",
+            fields: [
+              { type: "string", name: "title", label: "Title", required: true },
+              {
+                type: "string",
+                name: "description",
+                label: "Description",
+                required: true,
+              },
+              { type: "string", name: "imageUrl", label: "Image URL" },
+              { type: "string", name: "imageAlt", label: "Image Alt" },
+              { type: "string", name: "blockClasses", label: "Block Classes" },
+            ],
+          },
+          {
+            type: "object",
+            name: "paragraphTwo",
+            label: "Paragraph Two",
+            fields: [
+              { type: "string", name: "title", label: "Title", required: true },
+              {
+                type: "string",
+                name: "description",
+                label: "Description",
+                required: true,
+              },
+              { type: "string", name: "imageUrl", label: "Image URL" },
+              { type: "string", name: "imageAlt", label: "Image Alt" },
+              { type: "string", name: "blockClasses", label: "Block Classes" },
+            ],
+          },
+        ],
+      },
     ],
   },
 });
