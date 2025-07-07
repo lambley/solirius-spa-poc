@@ -1,15 +1,13 @@
 {
-  "hero": {
-    "title": "Solirius Service Centre",
-    "description": "Driving Success Through Dedicated Support, Maintenance and Continuous Improvement.",
-    "cta": {
-      "primary": { "label": "Get in touch", "href": "#contact" },
-      "secondary": { "label": "Learn more", "href": "#about" }
-    },
-    "announcement": {
-      "label": "Announcing our latest service offering",
-      "href": "/services",
-      "hrefText": "Learn more"
-    }
+  "title": "Solirius Service Centre",
+  "description": "Driving Success Through Dedicated Support, Maintenance and Continuous Improvement.",
+  "cta": {
+    "primary": { "label": "Get in touch", "href": "#contact" },
+    "secondary": { "label": "Learn more", "href": "#about" }
+  },
+  "announcement": {
+    "label": "Announcing our latest service offering",
+    "href": "/services",
+    "hrefText": "Learn more"
   }
 }

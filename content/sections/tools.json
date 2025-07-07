@@ -1,28 +1,26 @@
 {
-  "tools": {
-    "title": "Tools We Use",
-    "items": [
-      { "name": "Jira", "imageUrl": "/jira-logo.png", "imageAlt": "Jira logo" },
-      {
-        "name": "GitHub",
-        "imageUrl": "/github-logo.png",
-        "imageAlt": "GitHub logo"
-      },
-      {
-        "name": "Google Suite",
-        "imageUrl": "/google-logo.png",
-        "imageAlt": "Google Suite logo"
-      },
-      {
-        "name": "Office",
-        "imageUrl": "/office-logo.png",
-        "imageAlt": "Office logo"
-      },
-      {
-        "name": "Kandji",
-        "imageUrl": "/kandji-logo.png",
-        "imageAlt": "Kandji logo"
-      }
-    ]
-  }
+  "title": "Tools We Use",
+  "items": [
+    { "name": "Jira", "imageUrl": "/jira-logo.png", "imageAlt": "Jira logo" },
+    {
+      "name": "GitHub",
+      "imageUrl": "/github-logo.png",
+      "imageAlt": "GitHub logo"
+    },
+    {
+      "name": "Google Suite",
+      "imageUrl": "/google-logo.png",
+      "imageAlt": "Google Suite logo"
+    },
+    {
+      "name": "Office",
+      "imageUrl": "/office-logo.png",
+      "imageAlt": "Office logo"
+    },
+    {
+      "name": "Kandji",
+      "imageUrl": "/kandji-logo.png",
+      "imageAlt": "Kandji logo"
+    }
+  ]
 }

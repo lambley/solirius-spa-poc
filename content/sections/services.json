@@ -1,42 +1,40 @@
 {
-  "services": {
-    "title": "Our Services",
-    "description": "Learn what Solirius Reply Service Centre can do for you.",
-    "items": [
-      {
-        "id": 1,
-        "title": "Continuous Improvement",
-        "href": "/services/1",
-        "description": "We drive continuous improvement through data-driven analysis and incremental changes. Our focus is on efficiency, quality, and customer satisfaction, adapting to evolving needs.",
-        "category": { "title": "Software" },
-        "imageUrl": "/continuous-improvement.jpg",
-        "imageAlt": "Placeholder image for Continuous Improvement"
-      },
-      {
-        "id": 2,
-        "title": "Incident Management",
-        "href": "/services/2",
-        "description": "We provide robust incident management based on ITIL best practices, ensuring quick response and resolution. Our on-call teams and monitoring systems ensure service stability.",
-        "category": { "title": "Incidents" },
-        "imageUrl": "/incident-management.jpg",
-        "imageAlt": "Placeholder image for Incident Management"
-      },
-      {
-        "id": 3,
-        "title": "Discovery",
-        "href": "/services/3",
-        "description": "Our service discovery process offers a 'health-check' to understand your service's context and support needs. We identify gaps, risks, and dependencies to ensure a smooth service transition.",
-        "category": { "title": "Discovery" },
-        "imageUrl": "/discovery.jpg",
-        "imageAlt": "Placeholder image for Discovery"
-      }
-    ],
-    "linkToPage": {
-      "label": "View all services",
-      "href": "/services",
-      "hrefText": "All Services",
-      "target": "_self",
-      "rel": "noreferrer"
+  "title": "Our Services",
+  "description": "Learn what Solirius Reply Service Centre can do for you.",
+  "items": [
+    {
+      "id": 1,
+      "title": "Continuous Improvement",
+      "href": "/services/1",
+      "description": "We drive continuous improvement through data-driven analysis and incremental changes. Our focus is on efficiency, quality, and customer satisfaction, adapting to evolving needs.",
+      "category": { "title": "Software" },
+      "imageUrl": "/continuous-improvement.jpg",
+      "imageAlt": "Placeholder image for Continuous Improvement"
+    },
+    {
+      "id": 2,
+      "title": "Incident Management",
+      "href": "/services/2",
+      "description": "We provide robust incident management based on ITIL best practices, ensuring quick response and resolution. Our on-call teams and monitoring systems ensure service stability.",
+      "category": { "title": "Incidents" },
+      "imageUrl": "/incident-management.jpg",
+      "imageAlt": "Placeholder image for Incident Management"
+    },
+    {
+      "id": 3,
+      "title": "Discovery",
+      "href": "/services/3",
+      "description": "Our service discovery process offers a 'health-check' to understand your service's context and support needs. We identify gaps, risks, and dependencies to ensure a smooth service transition.",
+      "category": { "title": "Discovery" },
+      "imageUrl": "/discovery.jpg",
+      "imageAlt": "Placeholder image for Discovery"
     }
+  ],
+  "linkToPage": {
+    "label": "View all services",
+    "href": "/services",
+    "hrefText": "All Services",
+    "target": "_self",
+    "rel": "noreferrer"
   }
 }

@@ -1,4 +1,4 @@
-import { services } from "@/content/sections/services.json";
+import services from "@/content/sections/services.json";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 

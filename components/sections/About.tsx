@@ -1,6 +1,6 @@
 import SmartLink from "@/components/shared/SmartLink";
 import ContentBlock from "../shared/ContentBlock";
-import { about } from "@/content/sections/about.json";
+import about from "@/content/sections/about.json";
 import { SectionProps } from "@/types/components";
 
 export default function About({

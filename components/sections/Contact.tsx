@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { contact } from "@/content/sections/contact.json";
+import contact from "@/content/sections/contact.json";
 
 export default function Contact() {
   const [form, setForm] = useState({

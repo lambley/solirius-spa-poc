@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import SmartLink from "@/components/shared/SmartLink";
-import { testimonials } from "@/content/sections/testimonials.json";
-import { tools } from "@/content/sections/tools.json";
+import testimonials from "@/content/sections/testimonials.json";
+import tools from "@/content/sections/tools.json";
 import { SectionProps } from "@/types/components";
 
 export default function Testimonials({

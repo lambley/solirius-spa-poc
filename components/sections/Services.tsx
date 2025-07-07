@@ -1,5 +1,5 @@
 import ServiceCard from "@/components/shared/ServiceCard";
-import { services } from "@/content/sections/services.json";
+import services from "@/content/sections/services.json";
 import { SectionProps } from "@/types/components";
 import SmartLink from "@/components/shared/SmartLink";
 

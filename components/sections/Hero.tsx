@@ -1,4 +1,4 @@
-import { hero } from "@/content/sections/hero.json";
+import hero from "@/content/sections/hero.json";
 import SmartLink from "@/components/shared/SmartLink";
 
 export default function Hero() {
