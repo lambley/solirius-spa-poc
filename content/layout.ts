@@ -1,4 +1,4 @@
-import * as Global from "@/content/global";
+import globalContent from '@/content/global.json'
 import { NavigationItem, LegalLink, FooterAddress } from "@/types/layout";
 
 const navigation: NavigationItem[] = [
@@ -16,10 +16,10 @@ const legalLinks: LegalLink[] = [
 ];
 
 const footerDetails: FooterAddress = {
-  address: Global.address,
-  tagline: Global.tagline,
-  companyNumber: Global.companyNumber,
-  vatNumber: Global.vatNumber,
+  address: globalContent.address,
+  tagline: globalContent.tagline,
+  companyNumber: globalContent.companyNumber,
+  vatNumber: globalContent.vatNumber,
 };
 
 export { navigation, legalLinks, footerDetails };
