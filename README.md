@@ -26,6 +26,7 @@ The dev server uses turbopack for fast refresh and hot module replacement.
 Required environment variables for TinaCMS:
 - NEXT_PUBLIC_TINA_CLIENT_ID - Your TinaCMS client ID
 - TINA_TOKEN - Your TinaCMS token (for local development) e.g. Read-Only token
+- TINA_SEARCH_INDEXER_TOKEN - Requred for TinaCMS search indexing
 - GITHUB_BRANCH - The branch you want to use for TinaCMS (default is `main`)
 
 Note: TinaCMS requires Github authentication and a valid token to work properly. You can create a Read-Only token for local development.
