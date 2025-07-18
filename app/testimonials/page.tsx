@@ -11,7 +11,7 @@ export default function TestimonialPage() {
       SectionComponent={Testimonials}
       sectionProps={{ showLinkToPage: false, showToolsSection: false }}
       additionalContent={renderAdditionalContent(
-        Object.values(TestimonialAdditionalContent)
+        Object.values(TestimonialAdditionalContent.sections)
       )}
     />
   );
