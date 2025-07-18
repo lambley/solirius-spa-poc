@@ -1,20 +1,20 @@
 {
   "sections": [
     {
-      "_template": "comboSection",
       "title": "What Our Clients Say",
       "description": "We take pride in the positive feedback we receive from our clients. Their success stories inspire us to keep improving and innovating.",
       "imageUrl": "/whatclientssay-section.jpg",
       "imageAlt": "Client Testimonials",
-      "blockClasses": "mt-10 lg:mt-20"
+      "blockClasses": "mt-10 lg:mt-20",
+      "_template": "comboSection"
     },
     {
-      "_template": "comboSection",
       "title": "Join Our Community",
       "description": "Become part of a thriving community that values collaboration and support. Share your experiences and learn from others.",
       "imageUrl": "/community-section.jpg",
       "imageAlt": "Community Image",
-      "blockClasses": "mt-10 lg:mt-20"
+      "blockClasses": "mt-10 lg:mt-20",
+      "_template": "comboSection"
     }
   ]
 }

@@ -128,7 +128,7 @@ export default defineConfig({
               fields: [
                 { type: "string", name: "title", label: "Title" },
                 { type: "string", name: "description", label: "Description" },
-                { type: "string", name: "imageUrl", label: "Image URL" },
+                { type: "image", name: "imageUrl", label: "Image URL" },
                 { type: "string", name: "imageAlt", label: "Image Alt" },
                 { type: "string", name: "blockClasses", label: "Block Classes" },
               ],
