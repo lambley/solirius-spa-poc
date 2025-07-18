@@ -9,7 +9,7 @@ export default function ServicesPage() {
       SectionComponent={Services}
       sectionProps={{ showLinkToPage: false }}
       additionalContent={renderAdditionalContent(
-        Object.values(ServicesAdditionalContent)
+        Object.values(ServicesAdditionalContent.sections)
       )}
     />
   );

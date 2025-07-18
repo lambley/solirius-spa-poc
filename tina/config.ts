@@ -109,39 +109,32 @@ export default defineConfig({
         fields: [
           {
             type: "object",
-            name: "paragraphOne",
-            label: "Paragraph One",
-            fields: [
-              { type: "string", name: "title", label: "Title", required: true },
-              {
-                type: "string",
-                name: "description",
-                label: "Description",
-                required: true,
-              },
-              { type: "string", name: "imageUrl", label: "Image URL" },
-              { type: "string", name: "imageAlt", label: "Image Alt" },
-              { type: "string", name: "blockClasses", label: "Block Classes" },
-            ],
+            name: "sections",
+            label: "Page Sections",
+            list: true,
+            templates: [
+            {
+              name: "textSection",
+              label: "Text Section",
+              fields: [
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description" },
+                { type: "string", name: "blockClasses", label: "Block Classes" },
+              ],
+            },
+            {
+              name: "comboSection",
+              label: "Image+Text Section",
+              fields: [
+                { type: "string", name: "title", label: "Title" },
+                { type: "string", name: "description", label: "Description" },
+                { type: "string", name: "imageUrl", label: "Image URL" },
+                { type: "string", name: "imageAlt", label: "Image Alt" },
+                { type: "string", name: "blockClasses", label: "Block Classes" },
+              ],
+            }],
           },
-          {
-            type: "object",
-            name: "paragraphTwo",
-            label: "Paragraph Two",
-            fields: [
-              { type: "string", name: "title", label: "Title", required: true },
-              {
-                type: "string",
-                name: "description",
-                label: "Description",
-                required: true,
-              },
-              { type: "string", name: "imageUrl", label: "Image URL" },
-              { type: "string", name: "imageAlt", label: "Image Alt" },
-              { type: "string", name: "blockClasses", label: "Block Classes" },
-            ],
-          },
-        ],
+        ]
       },
     ],
   },
