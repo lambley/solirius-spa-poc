@@ -2,8 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Service } from "../../types/content";
 
-interface ServiceCardProps extends Service {}
-
 // This component is used to render individual service cards in the Services section.
 export default function ServiceCard({
   title,
@@ -12,7 +10,7 @@ export default function ServiceCard({
   category,
   imageUrl = "https://placehold.co/400.png",
   imageAlt = "placeholder",
-}: ServiceCardProps) {
+}: Service) {
   const renderDescription = () => {
     if (typeof description === "string") {
       return description;
