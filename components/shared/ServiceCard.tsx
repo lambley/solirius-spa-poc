@@ -1,17 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Service } from "../../types/content";
 
-interface ServiceCardProps {
-  title: string;
-  href: string;
-  description: string;
-  category: {
-    title: string;
-    href?: string;
-  };
-  imageUrl?: string;
-  imageAlt?: string;
-}
+interface ServiceCardProps extends Service {}
 
 // This component is used to render individual service cards in the Services section.
 export default function ServiceCard({
@@ -22,6 +13,20 @@ export default function ServiceCard({
   imageUrl = "https://placehold.co/400.png",
   imageAlt = "placeholder",
 }: ServiceCardProps) {
+  const renderDescription = () => {
+    if (typeof description === "string") {
+      return description;
+    } else if (description.type === "list") {
+      return (
+        <ul className="list-disc pl-5 space-y-1">
+          {description.items.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      );
+    }
+  }
+
   return (
     <article className="flex max-w-xl flex-col items-start justify-between">
       <div className="group relative">
@@ -47,7 +52,7 @@ export default function ServiceCard({
           </div>
         )}
 
-        <p className="mt-5 text-sm/6 text-gray-600">{description}</p>
+        <p className="mt-5 text-sm/6 text-gray-600">{renderDescription()}</p>
       </div>
       <Link href={href}>
         <div className="relative mt-8 flex items-center gap-x-4">

@@ -28,6 +28,107 @@
       "category": { "title": "Discovery" },
       "imageUrl": "/discovery.jpg",
       "imageAlt": "Placeholder image for Discovery"
+    },
+    {
+      "id": 4,
+      "title": "Growth & Scale",
+      "href": "/services/4",
+      "description": {
+        "type": "list",
+        "items": [
+          "Scalability: we can quickly scale up or down based on your needs",
+          "Speed: you get access to a ready-to-deploy workforce and established processes.",
+          "Resource Management: using us takes away the long-term commitment and overhead of hiring permanent staff during uncertain growth phases.",
+          "Focus: our help allows internal teams to focus on strategic growth initiatives rather than being impacted by operational overload."
+        ]
+      },
+      "category": { "title": "Growth" },
+      "imageUrl": "/placeholder.png",
+      "imageAlt": "Placeholder image for Growth & Scale"
+    },
+    {
+      "id": 5,
+      "title": "Specialised Skills & Expertise",
+      "href": "/services/5",
+      "description": {
+        "type": "list",
+        "items": [
+          "Access to Experts: we provide access to highly skilled professionals and specialised technology",
+          "Cost-Effectiveness: you only pay for the expertise you need, when you need it",
+          "Innovation: you benefit from our experience with multiple clients and exposure to best practices and new technologies",
+          "Reduced Training Burden: No need to invest in training internal staff for specialised, infrequent tasks."
+        ]
+      },
+      "category": { "title": "Expertise" },
+      "imageUrl": "/placeholder.png",
+      "imageAlt": "Placeholder image for Specialised Skills & Expertise"
+    },
+    {
+      "id": 6,
+      "title": "Cost Savings & Efficiency",
+      "href": "/services/6",
+      "description": {
+        "type": "list",
+        "items": [
+          "Economies of Scale: as we provide services to multiple clients we invest in areas that individual companies might not afford",
+          "Process Optimisation: we have refined processes for delivering services efficiently",
+          "Reduced Overhead: we help you lower costs associated with office space, equipment and employee benefits for the functions we operate for you."
+        ]
+      },
+      "category": { "title": "Effeciencies" },
+      "imageUrl": "/placeholder.png",
+      "imageAlt": "Placeholder image for Cost Savings & Efficiency"
+    },
+    {
+      "id": 7,
+      "title": "Focus on Core Business Functions",
+      "href": "/services/7",
+      "description": {
+        "type": "list",
+        "items": [
+          "Strategic Alignment: Free up internal resources to concentrate on what you do best",
+          "Improved Innovation: More time to develop new products, services and market strategies",
+          "Enhanced Agility: Be more nimble and responsive to market changes by offloading operational burdens",
+          "Better Resource Allocation: Ensure your most valuable internal assets are working on the most critical tasks."
+        ]
+      },
+      "category": { "title": "Growth" },
+      "imageUrl": "/placeholder.png",
+      "imageAlt": "Placeholder image for Focus on Core Business Functions"
+    },
+    {
+      "id": 8,
+      "title": "Managing Seasonal or Temporary Demand",
+      "href": "/services/8",
+      "description": {
+        "type": "list",
+        "items": [
+          "Flexibility: Easily scale support up or down to match demand without the challenges of hiring and laying off temporary staff",
+          "Consistent Service Levels: Ensure customers receive timely support during peak periods",
+          "Cost Control: Pay only for the additional capacity when it's needed",
+          "Reduced Staff Burnout: Prevent overloading permanent staff during busy times."
+        ]
+      },
+      "category": { "title": "Demand" },
+      "imageUrl": "/placeholder.png",
+      "imageAlt": "Placeholder image for Managing Seasonal or Temporary Demand"
+    },
+    {
+      "id": 9,
+      "title": "Risk Management & Compliance",
+      "href": "/services/9",
+      "description": {
+        "type": "list",
+        "items": [
+          "Redundancy & Reliability: multiple locations and robust infrastructure to ensure service continuity",
+          "Access to Technology: Leverage our investment in security, backup and recovery systems",
+          "Expertise in Compliance: We can help navigate complex regulatory landscapes (ISO27001)",
+          "Reduced Single Point of Failure: Distribute risk by not relying solely on internal resources."
+        ]
+      },
+      "category": { "title": "Risk" },
+      "imageUrl": "/placeholder.png",
+      "imageAlt": "Placeholder image for Risk Management & Compliance"
     }
   ],
   "linkToPage": {

@@ -1,10 +1,15 @@
 import { ImageUrl, Href } from "./globals";
 
+type ServiceDescriptionList = {
+  type: "list";
+  items: string[];
+};
+
 export type Service = {
   id: number;
   title: string;
   href: Href;
-  description: string;
+  description: string | ServiceDescriptionList;
   category: {
     title: string;
     href?: Href;

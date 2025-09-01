@@ -10,11 +10,29 @@ export default async function ServicePage(props: { params: ServicePageProps }) {
 
   if (!service) return notFound();
 
+  const renderDescription = (
+    description: string | { type: string; items: string[] }
+  ) => {
+    if (typeof description === "string") {
+      return description;
+    } else if (description.type === "list") {
+      return (
+        <ul className="list-disc pl-5 space-y-1">
+          {description.items.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      );
+    }
+  };
+
   return (
     <div className="py-24 sm:py-32">
       <div className="mx-auto max-w-2xl px-6">
         <h1 className="text-4xl font-bold">{service.title}</h1>
-        <p className="mt-4 text-gray-600">{service.description}</p>
+        <p className="mt-4 text-gray-600">
+          {renderDescription(service.description)}
+        </p>
         {service.imageUrl && (
           <div className="mt-8">
             <Image

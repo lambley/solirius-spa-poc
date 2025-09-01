@@ -2,6 +2,7 @@ import ServiceCard from "@/components/shared/ServiceCard";
 import services from "@/content/sections/services.json";
 import { SectionProps } from "@/types/components";
 import SmartLink from "@/components/shared/SmartLink";
+import { Href, ImageUrl } from "@/types/globals";
 
 export default function Services({
   showLinkToPage = true,
@@ -10,12 +11,15 @@ export default function Services({
   const renderServices = () => {
     return services.items.map((service) => (
       <ServiceCard
+        id={service.id}
         key={service.id}
         title={service.title}
-        href={service.href}
-        description={service.description}
+        href={service.href as Href}
+        description={
+          service.description as string | { type: "list"; items: string[] }
+        }
         category={service.category}
-        imageUrl={service.imageUrl}
+        imageUrl={service.imageUrl as ImageUrl}
         imageAlt={service.imageAlt}
       />
     ));
