@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@tinacms/cli": "^1.10.0",
+    "@tinacms/cli": "^2.0.4",
     "@types/node": "^20.19.4",
     "@types/react": "^19",
     "@types/react-dom": "^19",
